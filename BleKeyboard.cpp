@@ -156,6 +156,10 @@ void BleKeyboard::setDelay(uint32_t ms) {
   this->_delay_ms = ms;
 }
 
+void BleKeyboard::set_device_name(std::string const& deviceName) {
+	this->deviceName = deviceName;
+}
+
 void BleKeyboard::set_vendor_id(uint16_t vid) { 
 	this->vid = vid; 
 }

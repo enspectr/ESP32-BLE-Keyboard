@@ -142,7 +142,7 @@ private:
   uint16_t version   = 0x0210;
 
 public:
-  BleKeyboard(std::string deviceName = "ESP32 Keyboard", std::string deviceManufacturer = "Espressif", uint8_t batteryLevel = 100);
+  BleKeyboard(std::string deviceName = "ESP32 Keyboard", std::string deviceManufacturer = "EnSpectr", uint8_t batteryLevel = 100);
   void begin(void);
   void end(void);
   void sendReport(KeyReport* keys);
@@ -160,6 +160,7 @@ public:
   void setName(std::string deviceName);  
   void setDelay(uint32_t ms);
 
+  void set_device_name(std::string const& deviceName);
   void set_vendor_id(uint16_t vid);
   void set_product_id(uint16_t pid);
   void set_version(uint16_t version);
