@@ -164,6 +164,7 @@ public:
   void set_vendor_id(uint16_t vid);
   void set_product_id(uint16_t pid);
   void set_version(uint16_t version);
+  void restart_advertising(void);
 protected:
   virtual void onStarted(BLEServer *pServer) { };
   virtual void onConnect(BLEServer* pServer, NimBLEConnInfo & connInfo) override;

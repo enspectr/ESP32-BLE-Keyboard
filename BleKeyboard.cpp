@@ -128,6 +128,11 @@ void BleKeyboard::begin(void)
   ESP_LOGD(LOG_TAG, "Advertising started!");
 }
 
+void BleKeyboard::restart_advertising(void)
+{
+  advertising->start();
+}
+
 void BleKeyboard::end(void)
 {
 }
